@@ -85,3 +85,56 @@ nav {
 }
 
 /* header styles ends */
+
+/* main part styles starts */
+
+main {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.donation-sections {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: .5rem;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.donation-sections-img img {
+    width: 100%;
+    height: auto;
+}
+
+.donated-amount {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    background-color: rgb(210, 224, 251);
+    border: none;
+    border-radius: .5rem;
+}
+
+.donation-sections-texts form {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+#donation-amount-input {
+    border-radius: .2rem;
+    padding: .4rem;
+    font-family: "Poppins", sans-serif;
+
+}
+
+#donate-now-button {
+    border: none;
+    padding: .5rem;
+    border-radius: .2rem;
+    font-family: "Poppins", sans-serif;
+    color: aliceblue;
+    background-color: darkslateblue;
+}
