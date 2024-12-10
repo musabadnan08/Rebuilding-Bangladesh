@@ -3,3 +3,85 @@
 .poppins-font {
     font-family: "Poppins", sans-serif;
 }
+
+body {
+    margin: 0;
+}
+
+/* header styles starts */
+header {
+    position: sticky;
+    backdrop-filter: blur(50px);
+    top: 0;
+}
+
+.blog-link a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.blog-link {
+    background-color: darkslateblue;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: .2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(210, 224, 251);
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sticky-buttons {
+    text-align: center;
+    color: darkslateblue;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.home-button {
+    color: aliceblue;
+    background-color: darkslateblue;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: .2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+
+}
+
+.history-button {
+    color: aliceblue;
+    background-color: darkslateblue;
+    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: .2rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+/* header styles ends */
