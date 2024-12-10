@@ -138,3 +138,13 @@ main {
     color: aliceblue;
     background-color: darkslateblue;
 }
+
+/* footer */
+footer div {
+    text-align: center;
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: rgb(210, 224, 251);
+}
+
+/* footer */
