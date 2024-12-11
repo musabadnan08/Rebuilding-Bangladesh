@@ -10,7 +10,7 @@
 </head>
 
 <body class="poppins-font">
-    <!-- header styles starts -->
+    <!-- header starts -->
     <header>
         <div class="navbar">
             <nav>
@@ -23,19 +23,21 @@
                 </div>
                 <div id="amount" class="nav-title">
                     <img src="assets/coin.png" alt="">
-                    <h1>30000 BDT</h1>
+                    <h1 id="account-balance">30000 BDT</h1>
                 </div>
             </nav>
             <div class="sticky-buttons">
-                <button class="home-button">Home</button>
-                <button class="history-button">History</button>
+                <button id="show-donation-option" class="home-button">Home</button>
+                <button id="show-history-option" class="history-button">History</button>
             </div>
         </div>
         <hr>
     </header>
-    <!-- header styles ends -->
+    <!-- header ends -->
     <main>
-        <section>
+        <!-- Donation section starts  -->
+        <section id="donation-options">
+
             <!-- part 1 -->
 
             <div class="donation-sections">
@@ -45,7 +47,7 @@
                 <div class="donation-sections-texts">
                     <button class="donated-amount">
                         <img src="assets/coin.png" alt="">
-                        <h2>5000 BDT</h2>
+                        <h2 id="current-amount-one">5000 BDT</h2>
                     </button>
                     <div>
                         <h3>Donate for Flood at Noakhali, Bangladesh.</h3>
@@ -58,12 +60,15 @@
                             need.</p>
                     </div>
                     <form>
-                        <input id="donation-amount-input" type="text" placeholder="Write Donation Amount. . .">
-                        <input id="donate-now-button" type="submit" value="Donate Now">
+                        <input id="donation-amount-input-one" class="donation-amount-input" type="text"
+                            autocomplete="off" placeholder="Write Donation Amount. . .">
+                        <input id="donate-now-button-one" class="donate-now-button" type="submit" value="Donate Now">
                     </form>
                 </div>
             </div>
+
             <!-- part 2 -->
+
             <div class="donation-sections">
                 <div class="donation-sections-img">
                     <img src="assets/feni.png" alt="">
@@ -84,12 +89,14 @@
                             assist those in urgent need.</p>
                     </div>
                     <form>
-                        <input id="donation-amount-input" type="text" placeholder="Write Donation Amount. . .">
-                        <input id="donate-now-button" type="submit" value="Donate Now">
+                        <input class="donation-amount-input" type="text" placeholder="Write Donation Amount. . .">
+                        <input class="donate-now-button" type="submit" value="Donate Now">
                     </form>
                 </div>
             </div>
+
             <!-- part 3 -->
+
             <div class="donation-sections">
                 <div class="donation-sections-img">
                     <img src="assets/quota-protest.png" alt="">
@@ -110,18 +117,32 @@
                             donation to support these brave individuals in their time of need.</p>
                     </div>
                     <form>
-                        <input id="donation-amount-input" type="text" placeholder="Write Donation Amount. . .">
-                        <input id="donate-now-button" type="submit" value="Donate Now">
+                        <input class="donation-amount-input" type="text" placeholder="Write Donation Amount. . .">
+                        <input class="donate-now-button" type="submit" value="Donate Now">
                     </form>
                 </div>
             </div>
         </section>
+        <!-- Donation section ends  -->
+
+        <!-- Transaction history section starts -->
+        <section id="history-option" class="history-class">
+            <h1>Transaction History</h1>
+            <div id="history-container">
+
+            </div>
+        </section>
+        <!-- Transaction history section ends -->
     </main>
     <footer>
         <div>
             <h6>©️ 2024 | All rights reserved.</h6>
         </div>
     </footer>
+    <script src="js/utilities.js"></script>
+    <script src="js/donateMoney.js"></script>
+    <script src="js/features.js"></script>
+
 </body>
 
 </html>

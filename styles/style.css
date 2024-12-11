@@ -9,10 +9,11 @@ body {
 }
 
 /* header styles starts */
+
 header {
     position: sticky;
-    backdrop-filter: blur(50px);
     top: 0;
+    backdrop-filter: blur(50px);
 }
 
 .blog-link a {
@@ -24,19 +25,19 @@ header {
 
 .blog-link {
     background-color: darkslateblue;
+    border-radius: .2rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    border-radius: .2rem;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     background-color: rgb(210, 224, 251);
 }
 
@@ -49,8 +50,8 @@ nav {
 .sticky-buttons {
     text-align: center;
     color: darkslateblue;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .home-button {
@@ -86,7 +87,7 @@ nav {
 
 /* header styles ends */
 
-/* main part styles starts */
+/* donation option starts */
 
 main {
     max-width: 70%;
@@ -105,7 +106,7 @@ main {
 
 .donation-sections-img img {
     width: 100%;
-    height: auto;
+    min-width: 400px;
 }
 
 .donated-amount {
@@ -123,14 +124,14 @@ main {
     gap: .5rem;
 }
 
-#donation-amount-input {
+.donation-amount-input {
     border-radius: .2rem;
     padding: .4rem;
     font-family: "Poppins", sans-serif;
 
 }
 
-#donate-now-button {
+.donate-now-button {
     border: none;
     padding: .5rem;
     border-radius: .2rem;
@@ -139,7 +140,34 @@ main {
     background-color: darkslateblue;
 }
 
+/* donation section ends */
+
+/* transaction history styles starts */
+
+#history-option {
+    text-align: center;
+}
+
+.history-class {
+    display: none;
+}
+
+.display-none {
+    display: none;
+}
+
+/* .transaction-section div {
+    min-height: 3rem;
+    margin: .5rem;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: .5rem;
+    background: rgb(255, 255, 255);
+} */
+
+/* transaction history styles ends */
+
 /* footer */
+
 footer div {
     text-align: center;
     margin-top: 5rem;
