@@ -10,10 +10,23 @@ function getTextFieldValueById(id) {
     return TextValueValueNumber;
 }
 
+function changeButtonColor(id) {
+    document.getElementById("show-donation-option").classList.remove('active-route');
+    document.getElementById("show-history-option").classList.remove('active-route');
+
+    if (id === 'show-history-option') {
+        document.getElementById('show-history-option').classList.add('active-route');
+        document.getElementById('show-donation-option').classList.add('inactive-button');
+    }
+    else {
+        document.getElementById('show-donation-option').classList.add('active-route');
+    }
+}
+
 function showSectionById(id) {
     document.getElementById('donation-options').classList.add('display-none');
     document.getElementById('history-option').classList.add('display-none');
-    document.getElementById('history-option').classList.remove('history-class');
+    document.getElementById('history-option').classList.remove('history');
     document.getElementById(id).classList.remove('display-none');
 
 }

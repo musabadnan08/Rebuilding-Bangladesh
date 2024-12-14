@@ -15,16 +15,16 @@ document.getElementById('donate-now-button-one')
             document.getElementById('account-balance').innerHTML = newAccountBalance + ' BDT';
 
             // transactions history
-            const p = document.createElement('p');
-            p.innerText = `Added ${donationAmount} BDT. ; New Balance is ${newAmount}`;
-            console.log(p)
-            document.getElementById('history-container').appendChild(p)
+            const div = document.createElement('div');
+            div.classList.add('history-styles');
+            const date = new Date();
+            const dateString = date.toLocaleString();
+            div.innerHTML =
+                `<h4>${donationAmount} BDT is Donated for Flood at Noakhali, Bangladesh.</h4>
+                 <p>Date : ${dateString} (Bangladesh Standard Time)</p>`
+            document.getElementById('history-container').appendChild(div)
         }
         else {
             alert('failed to add money');
         }
     })
-
-
-
-
