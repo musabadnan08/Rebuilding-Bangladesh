@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles/blog.css">
+</head>
+
+<body class="poppins-font">
+    <header>
+        <div>
+            <nav>
+                <div class="blog-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-items">
+                    <img src="assets/logo.png" alt="">
+                    <h1>Rebuilding Bangladesh Together</h1>
+                </div>
+                <div class="nav-items">
+                    <img src="assets/coin.png" alt="">
+                    <h1 id="account-balance">70000 BDT</h1>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1 class="title">FAQs</h1>
+            <div class="faqs" id="faq1">
+                <div class="question">
+                    <h3>What is the Document Object Model (DOM)?</h3>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa aliquam, molestiae omnis molestias
+                        error alias!</p>
+                </div>
+            </div>
+            <div class="faqs" id="faq2">
+                <div class="question">
+                    <h3>How do you select an element from the DOM?</h3>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa aliquam, molestiae omnis molestias
+                        error alias!</p>
+                </div>
+            </div>
+            <div class="faqs" id="faq3">
+                <div class="question">
+                    <h3>What is event delegation in the context of the DOM, and why is it useful?</h3>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa aliquam, molestiae omnis molestias
+                        error alias!</p>
+                </div>
+            </div>
+            <div class="faqs" id="faq4">
+                <div class="question">
+                    <h3>How do you manipulate an element's attribute and styles using the DOM?</h3>
+                </div>
+                <div class="answer">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa aliquam, molestiae omnis molestias
+                        error alias!</p>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.getElementById('faq1').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('faq1').classList.toggle("active")
+            })
+            document.getElementById('faq2').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('faq2').classList.toggle("active")
+            })
+            document.getElementById('faq3').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('faq3').classList.toggle("active")
+            })
+            document.getElementById('faq4').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('faq4').classList.toggle("active")
+            })
+        </script>
+    </main>
+    <footer>
+        <div>
+            <h6>©️ 2024 | All rights reserved.</h6>
+        </div>
+    </footer>
+</body>
+
+</html>
