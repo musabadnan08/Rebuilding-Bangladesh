@@ -24,6 +24,20 @@ document.getElementById('donate-now-button-one')
             document.getElementById('current-amount-one').innerText = newAmount + ' BDT';
             document.getElementById('account-balance').innerHTML = newAccountBalance + ' BDT';
 
+            const modalDiv = document.createElement('div');
+            modalDiv.classList.add('modal');
+            modalDiv.innerHTML = `<h2>Congratulations!</h2>
+                                <img src="assets/coin.png" alt="">
+                                <p>You Have Donated ${donationAmount} BDT for Flood at Noakhali, Bangladesh.</p>
+                                <h2>Successfully.</h2>
+                                <button id="modal-close-button">Close Confirmation</button>`
+            document.getElementById('modal').appendChild(modalDiv)
+
+            document.getElementById('modal-close-button').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('modal').removeChild(modalDiv)
+            })
+
             // donation history
             const div = document.createElement('div');
             div.classList.add('history-styles');
@@ -59,9 +73,22 @@ document.getElementById('donate-now-button-two')
         else {
             const newAmount = (currentAmount + donationAmount).toFixed(2);
             const newAccountBalance = (accountBalance - donationAmount).toFixed(2);
-
             document.getElementById('current-amount-two').innerText = newAmount + ' BDT';
             document.getElementById('account-balance').innerHTML = newAccountBalance + ' BDT';
+
+            const modalDiv2 = document.createElement('div');
+            modalDiv2.classList.add('modal');
+            modalDiv2.innerHTML = `<h2>Congratulations!</h2>
+                                <img src="assets/coin.png" alt="">
+                                <p>You Have Donated ${donationAmount} BDT for Flood at Feni, Bangladesh.</p>
+                                <h2>Successfully.</h2>
+                                <button id="modal-close-button">Close Confirmation</button>`
+            document.getElementById('modal').appendChild(modalDiv2)
+
+            document.getElementById('modal-close-button').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('modal').removeChild(modalDiv2)
+            })
 
             // donation history
             const div2 = document.createElement('div');
@@ -98,9 +125,22 @@ document.getElementById('donate-now-button-three')
         else {
             const newAmount = (currentAmount + donationAmount).toFixed(2);
             const newAccountBalance = (accountBalance - donationAmount).toFixed(2);
-
             document.getElementById('current-amount-three').innerText = newAmount + ' BDT';
             document.getElementById('account-balance').innerHTML = newAccountBalance + ' BDT';
+
+            const modalDiv3 = document.createElement('div');
+            modalDiv3.classList.add('modal');
+            modalDiv3.innerHTML = `<h2>Congratulations!</h2>
+                                <img src="assets/coin.png" alt="">
+                                <p>You Have Donated ${donationAmount} BDT for Quota Movement Heroes of Bangladesh.</p>
+                                <h2>Successfully.</h2>
+                                <button id="modal-close-button">Close Confirmation</button>`
+            document.getElementById('modal').appendChild(modalDiv3)
+
+            document.getElementById('modal-close-button').addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('modal').removeChild(modalDiv3)
+            })
 
             // donation history
             const div3 = document.createElement('div');
@@ -108,7 +148,7 @@ document.getElementById('donate-now-button-three')
             const date = new Date();
             const dateString = date.toLocaleString();
             div3.innerHTML =
-                `<h4>${donationAmount} BDT is Donated for Quota Movement Heroes, Bangladesh.</h4>
+                `<h4>${donationAmount} BDT is Donated for Quota Movement Heroes of Bangladesh.</h4>
                  <p>Date : ${dateString} (Bangladesh Standard Time)</p>`
             document.getElementById('history-container').appendChild(div3)
         }

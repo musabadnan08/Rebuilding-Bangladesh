@@ -140,6 +140,32 @@ main {
     font-family: "Poppins", sans-serif;
     color: aliceblue;
     background-color: darkslateblue;
+    cursor: pointer;
+}
+
+.modal {
+    width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(210, 224, 251);
+    /* backdrop-filter: blur(300px); */
+    text-align: center;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+#modal-close-button {
+    border: none;
+    border-radius: .2rem;
+    padding: .5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+    font-weight: 600;
+    color: aliceblue;
+    background-color: darkslateblue;
+    cursor: pointer;
 }
 
 /* Donation section ends */
