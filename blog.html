@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="styles/blog.css">
+    <script src="https://kit.fontawesome.com/d5130df14b.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="poppins-font">
@@ -16,11 +17,11 @@
                     <a href="index.html">Home</a>
                 </div>
                 <div class="nav-items">
-                    <img src="assets/logo.png" alt="">
-                    <h1>Rebuilding Bangladesh Together</h1>
+                    <div><img src="assets/logo.png" alt=""></div>
+                    <h1>Rebuilding Bangladesh.</h1>
                 </div>
                 <div class="nav-items">
-                    <img src="assets/coin.png" alt="">
+                    <div><img src="assets/coin.png" alt=""></div>
                     <h1 id="account-balance">70000 BDT</h1>
                 </div>
             </nav>
@@ -28,41 +29,63 @@
     </header>
     <main>
         <section>
-            <h1 class="title">FAQs</h1>
+            <h1 class="title">Frequently Asked Questions.</h1>
             <div class="faqs" id="faq1">
                 <div class="question">
                     <h3>What is the Document Object Model (DOM)?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="answer">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa aliquam, molestiae omnis molestias
-                        error alias!</p>
+                    <p>Document Object Model (DOM) is a interface for web documents. DOM represents the structure of the
+                        webpage as a tree of
+                        objects. Every HTML element is considered as a node. By using JavaSript these nodes can be
+                        accessed, modified, added or
+                        removed and this is a way to change the content or behavior of a webpage and it can make the
+                        webpage functional.</p>
                 </div>
             </div>
             <div class="faqs" id="faq2">
                 <div class="question">
                     <h3>How do you select an element from the DOM?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="answer">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa aliquam, molestiae omnis molestias
-                        error alias!</p>
+                    <p>There are five methods for selecting elements from the DOM.
+                        getElementById -> This can be used to select a single element by its unique ID.
+                        querySelector -> This can be used to select the first element matching a CSS selector.
+                        querySelectorAll -> This can be used to select all elements matching a CSS selector.
+                        getElementsByClassName -> This can be used to select elements by their class name.
+                        getElementsByTagName -> This can be used to select elements by their tag name.</p>
                 </div>
             </div>
             <div class="faqs" id="faq3">
                 <div class="question">
                     <h3>What is event delegation in the context of the DOM, and why is it useful?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="answer">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa aliquam, molestiae omnis molestias
-                        error alias!</p>
+                    <p>Event delegation is a way, where an event listener can be added to a parent element instead of
+                        each child. When a event
+                        happens on a child element, it bubbles up to the parent. The parent element can check which
+                        child element triggered the
+                        event. This is a useful way because if we use this way we don't need to add multiple event
+                        listeners for each child and
+                        it also works for dynamically added child elements.</p>
                 </div>
             </div>
             <div class="faqs" id="faq4">
                 <div class="question">
                     <h3>How do you manipulate an element's attribute and styles using the DOM?</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="answer">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa aliquam, molestiae omnis molestias
-                        error alias!</p>
+                    <p>For manipulating an elements attributes in the DOM. we can use methods like setAttribute() to add
+                        or change and
+                        attribute, getAttribute() to read it, and removeAttribute() to delete it. To change styles, we
+                        can use the style
+                        properties to directly modify single css properties. For multiple changes, we can use cssText.
+                        And there is a another way
+                        to manage styles by adding, removing or toggling between classes using classList.</p>
                 </div>
             </div>
         </section>
